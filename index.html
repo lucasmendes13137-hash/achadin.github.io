@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achadinhos Hub - Ofertas Incríveis</title>
+    <meta name="description" content="Achadinhos que valem cada centavo. Descubra ofertas imperdíveis em produtos virais para TikTok. Links oficiais da Shopee.">
+    <meta name="keywords" content="ofertas, achadinhos, shopee, produtos baratos, tiktok deals">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+            margin: 0 auto 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #666;
+        }
+        .platform-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .tagline {
+            font-size: 16px;
+            color: #666;
+            margin: 5px 0;
+        }
+        .divider {
+            height: 1px;
+            background-color: #ddd;
+            margin: 20px 0;
+        }
+        .offers {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .offer-card {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .offer-card:hover {
+            transform: translateY(-2px);
+        }
+        .offer-image {
+            width: 80px;https://br.shp.ee/qfQWLbq
+            height: 80px;
+            border-radius: 8px;
+            background-color: #f0f0f0;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .offer-details {
+            flex: 1;
+        }
+        .offer-title {
+            font-size: 18px;Fone de Ouvido Sem Fio Airpods PRO5 Com Cancelamento De Ruído Bluetooth Pop-Up para iOS e Android
+            font-weight: bold;
+            margin: 0 0 5px 0;
+        }
+        .offer-benefit {
+            font-size: 14px;
+            color: #666;
+            margin: 0 0 10px 0;
+        }
+        .offer-price {
+            font-size: 16px;R$21,99
+            font-weight: bold;
+            color: #e74c3c;
+            margin: 0 0 10px 0;
+        }
+        .cta-button {
+            background-color: #ff6b35;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+        }
+        .trust-note {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+            margin-top: 20px;
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+            .offer-card {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .offer-image {
+                margin-right: 0;
+                margin-bottom: 10px;
+                width: 100%;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="avatar">🛒</div>
+            <h1 class="platform-name">Achadinhos Hub</h1>
+            <p class="tagline">Achadinhos que valem cada centavo 🔥</p>
+        </div>
+        <div class="divider"></div>
+        <div class="offers" id="offers-list">
+            <!-- Offers will be dynamically inserted here -->
+        </div>
+        <div class="trust-note">
+            Compra segura • Links oficiais da Shopee
+        </div>
+        <div class="footer">
+            Este site contém links de afiliado. Posso receber comissão sem custo extra para você.
+        </div>
+    </div>
+
+    <script>
+        // Product data - easy to edit/add/remove
+        const products = [
+            {
+                image: 'https://via.placeholder.com/80x80?text=Produto+1', // Replace with actual image URL
+                title: 'Produto Incrível 1',
+                benefit: 'Benefício rápido e viral!',
+                price: 'Preço imperdível: R$ 29,90',
+                link: 'https://shopee.com.br/affiliate-link-1' // Replace with actual affiliate link
+            },
+            {
+                image: 'https://via.placeholder.com/80x80?text=Produto+2',
+                title: 'Produto Incrível 2',
+                benefit: 'Mais um achado top!',
+                price: 'Preço imperdível: R$ 49,90',
+                link: 'https://shopee.com.br/affiliate-link-2'
+            },
+            {
+                image: 'https://via.placeholder.com/80x80?text=Produto+3',
+                title: 'Produto Incrível 3',
+                benefit: 'Perfeito para TikTok!',
+                price: 'Preço imperdível: R$ 19,90',
+                link: 'https://shopee.com.br/affiliate-link-3'
+            }
+            // Add more products here as needed
+        ];
+
+        // Function to render offers
+        function renderOffers() {
+            const offersList = document.getElementById('offers-list');
+            products.forEach(product => {
+                const card = document.createElement('div');
+                card.className = 'offer-card';
+                card.onclick = () => window.open(product.link, '_blank');
+                card.innerHTML = `
+                    <img src="${product.image}" alt="${product.title}" class="offer-image">
+                    <div class="offer-details">
+                        <h3 class="offer-title">${product.title}</h3>
+                        <p class="offer-benefit">${product.benefit}</p>
+                        <p class="offer-price">${product.price}</p>
+                        <button class="cta-button">Ver oferta</button>
+                    </div>
+                `;
+                offersList.appendChild(card);
+            });
+        }
+
+        // Load offers on page load
+        window.onload = renderOffers;
+    </script>
+</body>
+</html>
